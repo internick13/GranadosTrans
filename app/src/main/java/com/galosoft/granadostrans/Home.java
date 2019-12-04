@@ -20,8 +20,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 public class Home extends AppCompatActivity {
+
+    ImageView chat, nosotros, unidades, contacto;
 
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -51,6 +55,7 @@ public class Home extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
     }
 
     @Override
